@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  padding: 15px 0 100px;
+  max-width: $desktop-content;
+  width: 100%;
+  box-sizing: border-box;
+  @media screen and (max-width: $screen-mobile) {
+    justify-content: center;
+    padding: 14px 0 45px;
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    max-width: 165px;
+    font-size: $font-size-extra-small;
+    padding-right: 1.95vw;
+    font-family: $font-family-montserrat;
+    font-weight: 300;
+    @media screen and (max-width: $screen-mobile) {
+      display: none;
+    }
+  }
+  &__logo-img {
+    max-width: 140px;
+    height: 24px;
+    padding-bottom: 10px;
+  }
+  &__menu-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 6px 0 0 0;
+    margin: 0;
+    gap: 2vw;
+
+    @media screen and (max-width: $screen-mobile) {
+      gap: 5vw;
+      align-items: center;
+      padding-left: 4vw;
+      flex-wrap: nowrap;
+    }
+  }
+  &__menu-item {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__menu-link {
+    text-decoration: none;
+    color: $text-color-main;
+    font-weight: normal;
+
+    @media screen and (max-width: $screen-mobile) {
+      text-transform: uppercase;
+      font-size: $font-size-small;
+    }
+    &_delete {
+      @media screen and (max-width: $screen-mobile) {
+        display: none;
+      }
+    }
+  }
+  &__phone {
+    flex-grow: 1;
+    text-align: right;
+    white-space: nowrap;
+    padding: 6px 3.1vw 0 10px;
+    @media screen and (max-width: $screen-mobile) {
+      display: none;
+    }
+  }
+  &__social-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0 0 0;
+    margin: 0;
+    gap: 2vw;
+    @media screen and (max-width: $screen-mobile) {
+      display: none;
+    }
+  }
+  &__social-link {
+    &_telegramm,
+    &_vider,
+    &_whatsapp {
+      background-image: url("../../../assets/telegram.svg");
+      display: block;
+      width: $social-link-width;
+      height: $social-link-height;
+    }
+    &_vider {
+      background-image: url("../../../assets/viber.svg");
+    }
+    &_whatsapp {
+      background-image: url("../../../assets/whatsapp.svg");
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.content {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  max-width: $desktop-content;
+  position: relative;
+  @media screen and (max-width: $screen-mobile) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../../../assets/bg.png") no-repeat top / cover;
+  }
+  &__ball1 {
+    position: fixed;
+    top: 15%;
+    left: -10%;
+    width: 311px;
+    height: 311px;
+    border-radius: 50%;
+    background-color: rgba(150, 26, 26, 0.25);
+    z-index: -1;
+    box-shadow: 0 0 200px 150px rgba(150, 26, 26, 0.25);
+    @media screen and (max-width: $screen-mobile) {
+      display: none;
+    }
+  }
+  &__ball2 {
+    z-index: -1;
+    position: fixed;
+    top: 9.1%;
+    left: 36%;
+    height: 81px;
+    width: 81px;
+    margin: 0;
+    border-radius: 50%;
+    background: url(../../../assets/redball.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px 15px rgba(223, 125, 125, 0.02);
+    @media screen and (max-width: $screen-mobile) {
+      display: none;
+    }
+  }
+  &__ball3 {
+    z-index: -1;
+    position: fixed;
+    top: 1%;
+    left: 60%;
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    border-radius: 50%;
+    background: url(../../../assets/purpleball.png);
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: $screen-mobile) {
+      display: none;
+    }
+  }
+  &__ball4 {
+    z-index: -1;
+    position: fixed;
+    top: 57.5%;
+    left: 58.5%;
+    height: 48px;
+    width: 48px;
+    margin: 0;
+    background: url(../../../assets/redballsmall.png);
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width: $screen-mobile) {
+      display: none;
+    }
+  }
+  &__ball5 {
+    z-index: -1;
+    position: fixed;
+    top: -18%;
+    left: 42%;
+    width: 259px;
+    height: 259px;
+    border-radius: 50%;
+    background-color: rgba(131, 58, 180, 0.1);
+    box-shadow: 0 0 200px 150px rgba(131, 58, 180, 0.1);
+    @media screen and (max-width: $screen-mobile) {
+      display: none;
+    }
+  }
+}

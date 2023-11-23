@@ -1,0 +1,29 @@
+.teaser {
+  max-width: 362px;
+  @media screen and (max-width: $screen-mobile) {
+    max-width: 272px;
+    padding: 40px 14px 0;
+  }
+  &__title {
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 34px;
+    font-size: $font-size-h1-desktop;
+    @media screen and (max-width: $screen-mobile) {
+      padding-bottom: 20px;
+      font-size: $font-size-h1-mobile;
+    }
+    &_accent {
+      font-weight: 900;
+      background: $text-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__subtitle {
+    max-width: 275px;
+    margin: 0;
+    font-family: $font-family-montserrat;
+    font-size: $font-size-large;
+  }
+}
