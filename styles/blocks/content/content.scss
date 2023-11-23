@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: url("../../../assets/bg.png") no-repeat top / cover;
+    background: url("../assets/bg.png") no-repeat top / cover;
   }
   &__ball1 {
     position: fixed;
@@ -34,7 +34,7 @@
     width: 81px;
     margin: 0;
     border-radius: 50%;
-    background: url(../../../assets/redball.png);
+    background: url("../assets/redball.png");
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 10px 15px rgba(223, 125, 125, 0.02);
@@ -51,7 +51,7 @@
     width: 60px;
     margin: 0;
     border-radius: 50%;
-    background: url(../../../assets/purpleball.png);
+    background: url("../assets/purpleball.png");
     background-position: center;
     background-size: cover;
 
@@ -67,7 +67,7 @@
     height: 48px;
     width: 48px;
     margin: 0;
-    background: url(../../../assets/redballsmall.png);
+    background: url("../assets/redballsmall.png");
     background-position: center;
     background-size: cover;
     @media screen and (max-width: $screen-mobile) {

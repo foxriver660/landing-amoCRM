@@ -86,16 +86,16 @@
     &_telegramm,
     &_vider,
     &_whatsapp {
-      background-image: url("../../../assets/telegram.svg");
+      background-image: url("../assets/telegram.svg");
       display: block;
       width: $social-link-width;
       height: $social-link-height;
     }
     &_vider {
-      background-image: url("../../../assets/viber.svg");
+      background-image: url("../assets/viber.svg");
     }
     &_whatsapp {
-      background-image: url("../../../assets/whatsapp.svg");
+      background-image: url("../assets/whatsapp.svg");
     }
   }
 }
